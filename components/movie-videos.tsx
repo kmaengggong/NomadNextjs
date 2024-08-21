@@ -1,13 +1,13 @@
 import { API_URL } from "../app/constants";
 import styles from "../styles/movie-video.module.css";
 
-async function getVideos(id: string){
+async function getVideos(id: string) {
     const res = await fetch(`${API_URL}/${id}/videos`);
     const json = await res.json();
     return json;   
 }
 
-export default async function MovieVideos({id}: {id:string}) {
+export default async function MovieVideos({id}: {id: string}) {
     const videos = await getVideos(id);
     return (
         <div className={styles.container}>

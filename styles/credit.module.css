@@ -1,0 +1,26 @@
+.credit {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    cursor: pointer;
+    place-items: center;
+}
+    
+.credit img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+    
+.credit img {
+    opacity: 0.7;
+}
+    
+.credit img:hover {
+    opacity: 1;
+}
+    
+.credit h4 {
+    text-align: center;
+}
